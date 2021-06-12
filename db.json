@@ -1,0 +1,114 @@
+{
+  "posts": [
+    {
+      "message": "Hello guys, how are you?",
+      "id": 1
+    },
+    {
+      "message": "I am good and you",
+      "id": 2
+    },
+    {
+      "message": "hello",
+      "id": 3
+    },
+    {
+      "message": "hufdoiesoflheqoihfoeqirsgf",
+      "id": 4
+    },
+    {
+      "message": "auhvoehof",
+      "id": 5
+    },
+    {
+      "message": "jcjh",
+      "id": 6
+    },
+    {
+      "title": "added from post request.",
+      "id": 7
+    },
+    {
+      "title": "added from post request.",
+      "id": 8
+    },
+    {
+      "title": "added from post request.",
+      "id": 9
+    },
+    {
+      "title": "added from post request.",
+      "id": 10
+    },
+    {
+      "message": "added from post request.",
+      "id": 11
+    },
+    {
+      "message": "added from post request.",
+      "id": 12
+    },
+    {
+      "message": "added from post request.",
+      "id": 13
+    },
+    {
+      "message": "added from post request.",
+      "id": 14
+    },
+    {
+      "message": "added from post request.",
+      "id": 15
+    },
+    {
+      "message": "added from post request.",
+      "id": 16
+    },
+    {
+      "message": "added from post request.",
+      "id": 17
+    },
+    {
+      "message": "added from post request.",
+      "id": 18
+    },
+    {
+      "message": "added from post request.",
+      "id": 19
+    },
+    {
+      "message": "added from post request.",
+      "id": 20
+    },
+    {
+      "message": "added from post request.",
+      "id": 21
+    },
+    {
+      "message": "added from post request.",
+      "id": 22
+    },
+    {
+      "message": "added from post request.",
+      "id": 23
+    },
+    {
+      "message": "added from post request.",
+      "id": 24
+    },
+    {
+      "message": "added from post request.",
+      "id": 25
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
