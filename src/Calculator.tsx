@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Calculator = () => {
     const [inputReference, setInputReference] = useState("" as any);
     const handleClick = (e: any) => {
-        console.log(e.target.name);
+        // console.log(e.target.name);
         setInputReference(inputReference.concat(e.target.name))
     }
     const handleChange = (e: any) => {
