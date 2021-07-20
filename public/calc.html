@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head><title> New HTML File </title></head>
+<link rel="stylesheet" href="style.css"/>
+<body>
+    <div class="main-wrapper">
+        <!-- one input box -->
+        <div class="input-wrapper">
+        <input type="text" class="display" id="display"/>
+    </div>
+
+    <div class="buttons-wrapper">
+        <div class="row">
+            <button onClick="number('1')">1</button>
+            <button onClick="number('2')">2</button>
+            <button onClick="number('3')">3</button>
+            <button onClick="number('/')">/</button>
+        </div>
+        <div class="row">
+            <button onClick="number('4')">4</button>
+            <button onClick="number('5')">5</button>
+            <button onClick="number('6')">6</button>
+            <button onClick="number('*')">x</button>
+
+        </div>
+        <div class="row">
+            <button onClick="number('7')">7</button>
+            <button onClick="number('8')">8</button>
+            <button onClick="number('9')">9</button>
+            <button onClick="number('-')">-</button>
+
+        </div>
+
+        <div class="row">
+            <button onClick="clearInputs()">C</button>
+            <button onClick="number('0')">0</button>
+            <button onClick="equals()">=</button>
+            <button onClick="number('+')">+</button>
+
+        </div>
+    </div>
+
+        <!-- 16 buttons -->
+    </div>
+</body>
+</html>
+
+<script>
+var inputReference  = document.getElementById('display');
+var operator = 0;
+function number(num){
+    if (num == "+" || num == "-" || num == "*" || num == "/" ) {
+        // alert("this is operator no. " + operator);
+        operator ++;
+        if (operator == 1) {
+            
+            inputReference.value = inputReference.value + num;
+        }
+        else {
+            inputReference.value = eval(inputReference.value) + num;
+        }
+    } else {
+        inputReference.value = inputReference.value + num;
+    }
+
+
+}
+
+function clearInputs() {
+var myData = inputReference.value;
+// console.log(typeof myData)
+// myData[myData.length - 1] = ""
+var newStr = myData.split("");
+// console.log(newStr)
+newStr.pop();
+var res = newStr.join("");
+console.log(res)
+inputReference.value = res;
+
+
+}
+
+function equals(){
+    inputReference.value = eval(inputReference.value)
+}
+</script>

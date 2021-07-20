@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 function AddTodo() {
     const [data, setData] = useState([]);
     const [message, setMessage] = useState("" as any);
-    const [input, setInput] = useState("" as any);
 
     const fetchdata = async () => {
         let response= await axios.get(" http://localhost:40000/posts");
@@ -14,10 +13,10 @@ function AddTodo() {
         fetchdata();
    
     }, [])
+    
     const handleInput = (event:any) => {
         event.persist();
         setMessage(event.target.value);
-         setInput("" as string);
     }
     const handleSubmit =async (event:any) => {
         event.persist();
